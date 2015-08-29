@@ -49,6 +49,17 @@ Queue<T>& Queue<T>::operator=(const Queue& rhs)
 }
 
 
+template <class T>
+std::ostream& operator<<(std::ostream& os, const Queue<T>& quque)
+{
+	os << "<";
+	QueueItem<T> *p;
+	for(p = queue.head; p; p = p->next)
+	{
+		os << p->item << " ";
+	}
+	os << ">";
+}
 
 
 

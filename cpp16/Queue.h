@@ -2,6 +2,7 @@
 #define _QUEUE_H_
 
 #include "QueueItem.hpp"
+#include <iostream>
 
 template <class T>
 class Queue
@@ -15,6 +16,7 @@ public:
 	}
 
 	Queue& operator=(const Queue& rhs);
+	friend std::ostream& operator<< <T>(std::ostream&, const Queue<T>&); 
 
 	T& front(){ return head->item; }
 	const T& front() const { return head->item; }
@@ -33,5 +35,16 @@ private:
 	void destory();
 	void copy_elems(const Queue&);
 };
+
+
+
+
+
+
+
+
+
+
+
 
 #endif
