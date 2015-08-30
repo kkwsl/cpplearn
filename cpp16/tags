@@ -1,0 +1,41 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+List	List.h	/^	List():head(0), tail(0){}$/;"	f	class:List
+List	List.h	/^class List$/;"	c
+ListItem	ListItem.h	/^	ListItem(const T& t):item(t),next(0){}$/;"	f	class:ListItem
+ListItem	ListItem.h	/^class ListItem$/;"	c
+Queue	Queue.h	/^	Queue():head(0),tail(0){}$/;"	f	class:Queue
+Queue	Queue.h	/^	Queue(const Queue& q):head(0),tail(0)$/;"	f	class:Queue
+Queue	Queue.h	/^class Queue$/;"	c
+QueueItem	QueueItem.hpp	/^	QueueItem(const T& t):next(0),item(t)$/;"	f	class:QueueItem
+QueueItem	QueueItem.hpp	/^class QueueItem$/;"	c
+_QUEUEITEM_H_	QueueItem.hpp	2;"	d
+_QUEUE_H_	Queue.h	2;"	d
+_UTLITIES_H_	utlities.h	2;"	d
+compare	utlities.cc	/^int compare(const T& v1, const T& v2)$/;"	f
+copy_elems	Queue.cpp	/^void Queue<T>::copy_elems(const Queue& orig)$/;"	f	class:Queue
+destory	Queue.cpp	/^void Queue<T>::destory()$/;"	f	class:Queue
+empty	List.h	/^	bool empty()$/;"	f	class:List
+empty	Queue.h	/^	bool empty(){ return head == 0; };$/;"	f	class:Queue
+front	Queue.h	/^	T& front(){ return head->item; }$/;"	f	class:Queue
+front	Queue.h	/^	const T& front() const { return head->item; }$/;"	f	class:Queue
+head	List.h	/^	ListItem<T>* head, tail;$/;"	m	class:List
+head	Queue.h	/^	QueueItem<T>* head, tail;$/;"	m	class:Queue
+item	ListItem.h	/^	T item;$/;"	m	class:ListItem
+item	QueueItem.hpp	/^	T item;$/;"	m	class:QueueItem
+main	cpp1627.cpp	/^int main()$/;"	f
+main	cpp1632.cpp	/^int main()$/;"	f
+next	ListItem.h	/^	ListItem* next;$/;"	m	class:ListItem
+next	QueueItem.hpp	/^	QueueItem* next;$/;"	m	class:QueueItem
+operator <<	Queue.cpp	/^std::ostream& operator<<(std::ostream& os, const Queue<T>& quque)$/;"	f
+operator <<	QueueItem.hpp	/^std::ostream& operator<<(std::ostream& os, const QueueItem<T>& item)$/;"	f
+operator =	Queue.cpp	/^Queue<T>& Queue<T>::operator=(const Queue& rhs)$/;"	f	class:Queue
+pop	Queue.cpp	/^void Queue<T>::pop()$/;"	f	class:Queue
+push	Queue.cpp	/^void Queue<T>::push(const T& item)$/;"	f	class:Queue
+tail	List.h	/^	ListItem<T>* head, tail;$/;"	m	class:List
+tail	Queue.h	/^	QueueItem<T>* head, tail;$/;"	m	class:Queue
+~Queue	Queue.h	/^	~Queue()$/;"	f	class:Queue
